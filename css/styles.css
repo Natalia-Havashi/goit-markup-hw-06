@@ -836,23 +836,37 @@ margin-bottom: 12px;
 }
 
 .input{
-width:448px;
+width:100%;
 height: 40px;
 align-items: center;
+margin-bottom: 10px;
     
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px; 
 }
 
 .label{
+    position: relative;
+    flex-basis: 448px;
+}
+.form-label{
+    position: absolute;
+    left: 0;
+    bottom: 120%;
+    margin-bottom: 4px;
+    
+}
+
+.form-label{
+display: block;
 font-weight: 400;
 font-size: 12px;
-line-height: 14px;
+line-height:calc(14 / 12);
 letter-spacing: 0.01em;
-margin-bottom: 4px;
 color: #757575;
-margin-bottom: 10px;
-} 
+
+}
+
 
 .modal-button{
     display: flex;
@@ -910,7 +924,4 @@ color: #757575;
 color: rgba(33, 150, 243, 1);
 }
 
-/* .modal-icon{
-    position: absolute;
-    margin-top: 11px;
-} */
+
