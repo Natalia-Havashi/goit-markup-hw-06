@@ -560,7 +560,10 @@ background: #2196F3;
 .socials-footer:hover{
 background: #2196F3;    
 }
+
+
 .title-sing{
+
 margin-bottom: 20px;
 font-weight: 700;
 font-size: 14px;
@@ -572,8 +575,9 @@ color: #FFFFFF;
 
 }
 
-.button-sing-up{
 
+.button-sing-up{
+/* display: flex; */
 font-weight: 700;
 font-size: 16px;
 line-height: 30px;
@@ -787,7 +791,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 width: 528px;
-min-height: 581px;
+max-height: 581px;
 padding: 40px;
     
 background: #FFFFFF;
@@ -827,9 +831,8 @@ font-size: 20px;
 line-height:calc(23 / 20);
 text-align: center;
 letter-spacing: 0.03em;
-margin-top: 40px;
-
 color: #212121;
+margin-bottom: 12px;
 }
 
 .input{
@@ -851,9 +854,12 @@ color: #757575;
 margin-bottom: 10px;
 } 
 
-
+.modal-button{
+    display: flex;
+    justify-content: center;
+}
 .button-modal{
-display: block;
+/* display: block; */
 min-width: 200px;
 height: 50px;
 font-weight: 700;
@@ -861,12 +867,20 @@ font-size: 16px;
 line-height:calc(30 / 16);
 cursor: pointer;
 
-align-items: center;
+/* align-items: center; */
 background: #2196F3;
 color: #FFFFFF;
 border:none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+}
+
+.button-modal:hover{
+    background: #188CE8;
+}
+.checkbox{
+    margin-bottom: 30px;
+
 }
 
 .texteria{
@@ -877,37 +891,26 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
-
 width: 448px;
 height: 120px;
 resize: none;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
-.checkbox{
-    margin-left: 54px;
-    margin-right: 51px;
-    margin-bottom: 30px;
-}
+
 .label-services{
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
-
 letter-spacing: 0.03em;
-
 color: #757575;
-
 }
+
 .contract{
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
 color: rgba(33, 150, 243, 1);
 }
 
-.modal-icon{
+/* .modal-icon{
     position: absolute;
     margin-top: 11px;
-}
+} */
