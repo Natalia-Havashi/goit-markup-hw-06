@@ -422,7 +422,11 @@
       <form class="footer-form">
         <div class="footer-input">
           <p class="title-sing">Підпишіться на розсилку</p>
-          <input type="email" name="email" id="email" placeholder="E-mail" class="input-footer">
+          <label class="footer-label">
+          <input type="email" 
+          name="email"  
+          placeholder="E-mail" class="input-footer">
+        </label>
           <button type="submit" class="button-sing-up">
             Підписатися
             <svg class="icon-send" width="24" height="24">
@@ -472,19 +476,29 @@
         <textarea name="comment" id="comment"  placeholder="Введіть текст" class="texteria"></textarea>
         <span class="form-label">Коментар</span>
       </div>
-      <div class="checkbox">
-        <input type="checkbox" name="services" id="services">
-        <label for="services" class="label-services">Погоджуюся з розсилкою та приймаю   
-          <a href="./index.html" class="contract">Умови договору</a></label>
-      </div>
-      <div class="modal-button">
+      
+        <label class="label-services">
+          <input 
+          class="checkbox-input" 
+          type="checkbox" 
+          name="agreement-chekbox">
+          <svg class="form-checkbox-icon" width="16" height="15">
+            <use class="uncheked" href="./images/icons.svg#icon-icon-unchek"></use>
+            <use class="checked" href="./images/icons.svg#icon-icon-check"></use>
+            </svg>
+          <span class="form-agreement-text">
+            Погоджуюся з розсилкою та приймаю   
+            <a class="contract" href="./index.html">Умови договору</a>
+          </span>
+        </label>
+      
         <button type="submit" class="button-modal">Відправити</button>
-      </div>
+      
         </form>
       </div>
     </div>
 
-
+  <script src="./js/header-scroll.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
