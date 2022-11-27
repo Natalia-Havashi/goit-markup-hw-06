@@ -448,43 +448,48 @@
       <p class="title-modal">Залиште свої дані, ми вам передзвонимо</p>
       <form class="modal-form">
         <div class="form-group">
-         <label for="user" class="label">
-            <input type="text" name="user" id="user" class="input">
-            <span class="form-label">Ім'я</span>
-            <svg class="modal-icon" width="12" height="12">
+         <label class="label">
+          <span class="form-label">Ім'я</span>
+            <input type="text" name="user" class="input">
+             <svg class="modal-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
-          </label>
+            </label>
 
-            <label for="tel" class="label">
-            <input type="tel" name="tel" id="tel" class="input">
+            <label class="label">
             <span class="form-label">Телефон</span>
+            <input type="tel" name="tel" class="input">
             <svg class="modal-icon" width="13" height="13">
             <use href="./images/icons.svg#icon-tel"></use>
             </svg>
-          </label>
+            </label>
 
-            <label for="email" class="label">
-            <input type="email" name="email" id="email" class="input">
-            <span class="form-label">Пошта</span>
+            <label class="label">
+              <span class="form-label">Пошта</span>
+            <input type="email" name="email" class="input">
             <svg class="modal-icon" width="15" height="12">
             <use href="./images/icons.svg#icon-mail"></use>
             </svg>
+            
           </label>
 
-        <label for="comment" class="label"></label>
-        <textarea name="comment" id="comment"  placeholder="Введіть текст" class="texteria"></textarea>
+        <label for="comment" class="label-comment"></label> 
         <span class="form-label">Коментар</span>
+        <textarea name="comment" id="comment"  placeholder="Введіть текст" class="texteria"></textarea>
+       
       </div>
       
         <label class="label-services">
           <input 
-          class="checkbox-input visually-hidden " 
+          class="checkbox-input visually-hidden" 
           type="checkbox" 
-          name="agreement-chekbox" checked>
+          name="agreement-chekbox" 
+          checked 
+          />
           <svg class="form-checkbox-icon" width="16" height="15">
-            <use class="uncheked" href="./images/icons.svg#icon-icon-unchek"></use>
-            <use class="checked" href="./images/icons.svg#icon-icon-check"></use>
+            <use class="uncheked" href="./images/icons.svg#icon-unchecked"></use>
+            <use class="checked" href="./images/icons.svg#icon-checked"></use>
+           
             </svg>
           <span class="form-agreement-text">
             Погоджуюся з розсилкою та приймаю   
